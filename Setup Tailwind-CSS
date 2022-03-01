@@ -1,0 +1,24 @@
+The browser automatically does not allow you to use Tailwind-CSS in making of your website, to make it happen you have to make it ready for production bt having 
+these command on your VS-Code Terminal.
+
+npm init -y       //This initializes the directory as a NodeJs project.
+npm install -D tailwindcss postcss autoprefixer vite   //This will install postcss and other required packages.
+npx tailwindcss init    //Creates a json file.
+
+
+Now you will have following files created with the index file which you created earlier.
+  ---package-lock.json
+  ---package.json
+  ---tailwind.config.js
+  
+after this you have to make some modifications in files:
+in package.json file
+  ---add "start":"vite" to your scripts
+in tailwind.config.js
+  ---Replace content:[] with content["*"],
+
+Here the intallation and setup for production  has been completed. Now you have to restart the development server by running th following code:
+  ---npm run start
+   
+Now you are ready to use your Tailwind-CSS for the production of your website. 
+
